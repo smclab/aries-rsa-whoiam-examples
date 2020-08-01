@@ -17,4 +17,7 @@ Bundle-Name: Aries Remote Service Admin Examples - WhoIam Service
 Bundle-SymbolicName: it.smc.techblog.apache.aries.rsa.examples.whoiam.service
 Bundle-Copyright: Copyright (c) 2020 SMC Treviso Srl. All rights reserved
 
+Include-Resource: \
+	@target/lib/json-20200518.jar
+
 -dsannotations: *
