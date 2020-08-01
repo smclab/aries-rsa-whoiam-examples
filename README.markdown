@@ -4,6 +4,26 @@
 This project refers to the article What are OSGi Remote µServices published 
 on the SMC [TechBlog](https://techblog.smc.it) blog.
 
+In this project there are the three OSGi API, Consumer and Service bundles for 
+the Who I am service. Details are shown in the table.
+
+| Service              | Bundle Name     | Description                                                  |
+| -------------------- | --------------- | ------------------------------------------------------------ |
+| Who I am Service     | WhoIam API      | Bundle that defines the Who I am service contract through the Java interface. The bundle exports the interface package |
+|                      | WhoIam Service  | Bundle that implements the interface of the Who I am service. The bundle imports the interface package |
+|                      | WhoIam Consumer | Bundle that consumes the Who I am service. The reference to the service is obtained transparently from the Service Registry. The bundle imports the interface package |
+
+Table 1 - OSGi bundles that will implement the example scenario for Remote µServices
+
+
+## 1. Quick Start
+
+```bash
+$ git clone https://github.com/smclab/aries-rsa-whoiam-examples.git
+$ cd aries-rsa-whoiam-examples
+$ mvn package
+```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to 
