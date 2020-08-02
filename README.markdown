@@ -24,6 +24,14 @@ $ cd aries-rsa-whoiam-examples
 $ mvn package
 ```
 
+In this terminal session you will see the clone of the repository and 
+compilation of the project. Next you will see the connection to the console of 
+Liferay from which I will execute commands to obtain information about Who I am
+service, all this is possible thanks to the call to remote services 
+(OSGi Remote µServices).
+
+[![asciicast](https://asciinema.org/a/351307.svg)](https://asciinema.org/a/351307?autoplay=1)
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to 
